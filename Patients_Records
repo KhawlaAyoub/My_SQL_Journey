@@ -1,0 +1,14 @@
+-- أول استعلام في رحلتي لتعلم SQL
+-- الهدف: استخراج بيانات افتراضية لمرضى مختبرات البرج
+
+SELECT 
+    Patient_Name, 
+    Test_Result, 
+    Visit_Date
+FROM 
+    Lab_Results_Table
+WHERE 
+    Test_Result = 'Positive' 
+    AND Visit_Date >= '2026-01-01'
+ORDER BY 
+    Visit_Date DESC;
